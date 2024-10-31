@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", async function() {
     let Name = params.get('name');
     let Type = params.get('type');
     Name = Name.toLocaleUpperCase();
-
-    let data = await fetch("http://localhost:3000/quotes");
+/// 3000 port for local machine http://localhost:3000
+    let data = await fetch("https://diwali-wishing-app.onrender.com/quotes");
 
     let quotes = await data.json();
     
